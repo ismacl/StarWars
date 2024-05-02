@@ -8,8 +8,8 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Contenedor/>}>
-          <Route index component={<Peliculas/>} />
-          <Route path="peliculas" component ={<Peliculas/>}/>
+          <Route index element={<Peliculas/>} />
+          <Route path="peliculas" element ={<Peliculas/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

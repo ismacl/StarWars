@@ -2,8 +2,8 @@ ul{
     list-style-type: none;
     width: 50%;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: 20px;
 }
 
 li > a{
@@ -21,8 +21,8 @@ li{
 }
 
 li > a:not(.activo):hover{
-    background-color: gray;
-    color: white;
+    background-color: black;
+    color: yellow;
 }
 
 li > a.activo{

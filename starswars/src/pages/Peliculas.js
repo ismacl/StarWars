@@ -1,6 +1,20 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Peliculas = () =>{
+    
     return<>
-        <p>¡Contenido!</p>
+        <div>
+            <h2>Star Wars Estrellas y leyendas</h2>
+            <ul>
+                <li>
+                    <Link to ="/TrilogiaOriginal">Trilogia Original</Link>
+                </li>
+                <li>
+                    <Link to ="/TrilogiaPrecuelas">Trilogia de Precuelas</Link>
+                </li>
+            </ul>
+        </div>
     </>
 }
 

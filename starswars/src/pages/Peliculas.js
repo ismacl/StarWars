@@ -5,7 +5,7 @@ const Peliculas = () =>{
     
     return<>
         <div>
-            <h2>Star Wars Estrellas y leyendas</h2>
+            <h2>Trilogias de la saga Star Wars</h2>
             <ul>
                 <li>
                     <Link to ="/TrilogiaOriginal">Trilogia Original</Link>

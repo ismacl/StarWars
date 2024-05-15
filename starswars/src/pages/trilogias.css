@@ -1,0 +1,23 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.peliculas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.titulo{
+    width: 80%;
+}
+
+.peliculas img{
+    width: 100%;
+}
+
+.titulo p{
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.personajes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.personajes img{
+    width: 50%;
+}

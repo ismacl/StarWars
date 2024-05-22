@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import './personajes.css';
 import foto from '../images/star_wars_personajes.jpg'
+import { Link } from "react-router-dom";
 
 const Personajes = () => {
     const [personajes, setPersonajes] = useState([])
@@ -38,7 +39,7 @@ const Personajes = () => {
 
     return<>
     <div className="personajes">
-     {personajes.map(objeto => { return <div> <img src={foto}></img> <p>{objeto.name}</p> </div>})}
+     {personajes.map(objeto => { return <Link to={objeto.uid}> <div> <img src={foto}></img> <p>{objeto.name}</p> </div> </Link> })}
      </div>
         <button hidden={nextPagina===null} onClick={siguiente}>Siguiente pagina</button>
         <button hidden={returnPagina===null} onClick={anterior}>Anterior pagina</button>

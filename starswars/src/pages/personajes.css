@@ -10,6 +10,12 @@
     margin-top: 2%;
 }
 
+.personajes p{
+    color: black;
+    text-decoration: none;
+}
+
 .personajes img{
     width: 50%;
+    margin-top: 2%;
 }

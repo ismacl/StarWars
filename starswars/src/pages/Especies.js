@@ -24,7 +24,7 @@ const Especies = () => {
             setEspecies(response.data.results)
         setNextPagina(response.data.next)
         setReturnPagina(response.data.previous)
-        })
+        }).catch(error => {})
     }
 
     useEffect(() => {
@@ -34,12 +34,6 @@ const Especies = () => {
         setNextPagina(response.data.next)
         setReturnPagina(response.data.previous)
     })
-    },[])
-
-    useEffect (() => {
-        axios.get("https://www.swapi.tech/api/species/").then (response => {
-            console.log(response.data.results)
-            setEspecies(response.data.results)})
     },[])
 
     return<>

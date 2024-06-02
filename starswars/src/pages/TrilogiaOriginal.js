@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import foto from "../images/originales.jpg"
 import './trilogias.css'
+import { Link } from "react-router-dom";
 
 const TrilogiaOriginal = () =>{
     const [peliculas, setPeliculas] = useState([])
@@ -21,7 +22,7 @@ const TrilogiaOriginal = () =>{
                         return true
                     } else
                     return false
-                }).map (objeto => {return <div className="titulo"> <img src={foto}></img><p>{objeto.properties.title}</p> </div>})
+                }).map (objeto => {return <Link to={objeto.uid}> <div className="titulo"> <img src={foto}></img><p>{objeto.properties.title}</p> </div> </Link>})
                 
                 }
         </div>    

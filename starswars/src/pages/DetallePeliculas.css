@@ -1,9 +1,9 @@
-.personaje .foto img{
+.pelicula .foto img{
     width: 40%;
     margin-left: 5%;
 }
 
-.personaje {
+.pelicula {
     display: grid;
     grid-template-columns: 50% 50%;
 }

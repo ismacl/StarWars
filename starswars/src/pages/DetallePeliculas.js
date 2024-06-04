@@ -9,6 +9,7 @@ const DetallePersonajes = () => {
     const [Nombre, setNombre] = useState()
     const [Estreno, setEstreno] = useState()
     const [Director, setDirector] = useState()
+    const [Opening, setOpening] = useState()
     const [error, setError] = useState()
     const params = useParams();
 
@@ -23,6 +24,7 @@ const DetallePersonajes = () => {
         setNombre(response.data.result.properties.title)
         setEstreno(response.data.result.properties.release_date)
         setDirector(response.data.result.properties.director)
+        setOpening (response.data.result.properties.opening_crawl)
         }).catch(() => {
             setError("No se encontro la pelicula que buscas")
         })
@@ -48,6 +50,8 @@ const DetallePersonajes = () => {
     <h3>{Nombre}</h3>
     <p>Fecha de estreno: {Estreno}</p>
     <p>Director: {Director}</p>
+    <br></br>
+    <p>Descripcion: {Opening}</p>
     </div>
     </div>
     </>

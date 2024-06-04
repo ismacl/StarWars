@@ -1,11 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Star Wars', sans-serif;
+}
+
+.fondo{
+    background-image: url(./images/esstrella_muerte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titulo{
     margin-top: 1%;
     margin-left: 2%;
+    color: yellow;
 }
 
 ul{
@@ -18,7 +28,7 @@ ul{
 
 li > a{
     text-decoration: none;
-    color: initial;
+    color: yellow;
     display: block;
     padding: 20px;
     

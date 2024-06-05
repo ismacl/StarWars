@@ -3,19 +3,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Star Wars', sans-serif;
+    font-family: 'Sunshine';
+    src: url(../../../Super\ Sunshine.ttf);
 }
 
 .fondo{
     background-image: url(./images/esstrella_muerte.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 120vh;
 }
 
 .titulo{
-    margin-top: 1%;
     margin-left: 2%;
-    color: yellow;
+    color: #FFE81F;
 }
 
 ul{
@@ -28,24 +29,24 @@ ul{
 
 li > a{
     text-decoration: none;
-    color: yellow;
+    color: #FFE81F;
     display: block;
     padding: 20px;
     
 }
 
 li{
-    border: 1px solid black;
+    border: 1px solid none;
     display: inline-block;
-    background-color: #dcdcdc;
+    background-color: none;
 }
 
 li > a:not(.activo):hover{
-    background-color: black;
-    color: yellow;
+    background-color: #dcdcdc;
+    color: #FFE81F;
 }
 
 li > a.activo{
-    background-color: black;
-    color: yellow;
+    background-color: #dcdcdc;
+    color: #FFE81F;
 }

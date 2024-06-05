@@ -3,24 +3,24 @@
     padding: 0;
 }
 
-.personajes{
+.especies{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     margin-left: 5%;
     margin-top: 2%;
 }
 
-.personajes .nombre{
+.especies .nombre{
     color: white;
     text-decoration: none;
 }
 
-.personajes .foto{
+.especies .foto{
     width: 100%;
     margin-top: 2%;
 }
 
-.personajes a{
+.especies a{
     width: 50%;
 }
 

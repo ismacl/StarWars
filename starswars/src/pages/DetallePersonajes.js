@@ -48,6 +48,7 @@ const DetallePersonajes = () => {
     </div>
     <div className="datos">
     <h3>{Nombre}</h3>
+    <br></br>
     <p>Año de nacimiento: {Nacimiento}</p>
     <p>Altura: {Altura}</p>
     <p>Peso: {Peso}</p>

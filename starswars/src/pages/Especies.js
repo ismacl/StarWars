@@ -1,7 +1,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import './personajes.css'
+import './especies.css'
 import foto from '../images/especies.jpg'
+import { Link } from "react-router-dom"
 
 const Especies = () => {
     const [especies, setEspecies] = useState([])
@@ -37,8 +38,8 @@ const Especies = () => {
     },[])
 
     return<>
-    <div className="personajes">
-        {especies.map(objeto => {return <div> <img src={foto}></img> <p>{objeto.name}</p> </div>})}
+    <div className="especies">
+        {especies.map(objeto => {return <Link> <div> <img className="foto" src={foto}></img> <p className="nombre">{objeto.name}</p> </div> </Link>})}
     </div>
     <button hidden={nextPagina===null} onClick={siguiente}>Siguiente pagina</button>
     <button hidden={returnPagina===null} onClick={anterior}>Anterior pagina</button>

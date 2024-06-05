@@ -39,7 +39,7 @@ const Personajes = () => {
 
     return<>
     <div className="personajes">
-     {personajes.map(objeto => { return <Link to={objeto.uid}> <div> <img src={foto}></img> <p>{objeto.name}</p> </div> </Link> })}
+     {personajes.map(objeto => { return <Link to={objeto.uid}> <div> <img className="foto" src={foto}></img> <p className="nombre">{objeto.name}</p> </div> </Link> })}
      </div>
         <button hidden={nextPagina===null} onClick={siguiente}>Siguiente pagina</button>
         <button hidden={returnPagina===null} onClick={anterior}>Anterior pagina</button>

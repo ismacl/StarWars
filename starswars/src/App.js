@@ -22,6 +22,7 @@ function App() {
           <Route path='Personajes/:idPersonaje' element={<DetallePersonajes/>}/>
           <Route path='TrilogiaOriginal/:idPeliculas' element={<DetallePeliculas/>}/>
           <Route path='TrilogiaPrecuelas/:idPeliculas' element={<DetallePeliculas/>}/>
+          <Route path='Especies/:idEspecie' element={<DetalleEspecies/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

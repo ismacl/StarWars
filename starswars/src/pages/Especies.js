@@ -39,7 +39,7 @@ const Especies = () => {
 
     return<>
     <div className="especies">
-        {especies.map(objeto => {return <Link> <div> <img className="foto" src={foto}></img> <p className="nombre">{objeto.name}</p> </div> </Link>})}
+        {especies.map(objeto => {return <Link to={objeto.uid}> <div> <img className="foto" src={foto}></img> <p className="nombre">{objeto.name}</p> </div> </Link>})}
     </div>
     <button hidden={nextPagina===null} onClick={siguiente}>Siguiente pagina</button>
     <button hidden={returnPagina===null} onClick={anterior}>Anterior pagina</button>

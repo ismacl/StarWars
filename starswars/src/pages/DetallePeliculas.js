@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import not_found from '../images/404.png';
 import nueva_esperanza from '../images/nueva_esperanza.jpg'
+import imperio_contraataca from '../images/imperio_contraataca.jpg'
 import './DetallePeliculas.css';
 
 const DetallePersonajes = () => {
@@ -34,7 +35,9 @@ const DetallePersonajes = () => {
     let image;
     if (Nombre === "A New Hope") {
         image = nueva_esperanza
-    }else {
+    }else if (Nombre === "The Empire Strikes Back") {
+        image = imperio_contraataca
+    } else {
         image = not_found
     }
 

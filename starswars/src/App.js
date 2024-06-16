@@ -7,6 +7,7 @@ import Personajes from './pages/Personajes';
 import Especies from './pages/Especies';
 import DetallePersonajes from './pages/DetallePersonajes'
 import DetallePeliculas from './pages/DetallePeliculas'
+import DetalleEspecies from './pages/DetalleEspecies';
 
 function App() {
   return (
